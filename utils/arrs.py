@@ -43,3 +43,15 @@ def my_slice(coll, start=0, end=None):
             normalized_start += length
 
     return coll[normalized_start:normalized_end]
+
+
+def coating_types(array: list, coating_in_array: type):
+    result = []
+    for element in array:
+        if isinstance(element, coating_in_array):
+            result.append(element)
+    return len(result)
+
+
+def divide(a, b):
+   return a / b
